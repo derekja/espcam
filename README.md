@@ -60,3 +60,10 @@ The weights for yolo come from https://pjreddie.com/media/files/yolov3.weights a
 The inspiration for this project came from a version that reads from a video and is found here: https://github.com/yashrajmani/OpenCV_Yolo3_Object_Detection-from-Video/tree/main
 
 run "python3 detections.py" and move the camera around to see what is detected. Press the "q" key to exit the application.
+
+This example can be extended to a later (and more performant) version of YOLO by following the tutorial here: https://thepythoncode.com/article/yolo-object-detection-with-opencv-and-pytorch-in-python
+
+Some more detail on the YOLO family of detectors can be found here: https://www.v7labs.com/blog/yolo-object-detection
+
+And some detail on training the models and writing new detectors here: https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/
+
