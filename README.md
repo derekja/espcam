@@ -1,5 +1,5 @@
 # espcam
-This is a repo for the ESP-CAM workshop taught at UVic in the fall of 2023 using the AI Thinker board and OpenCV using YOLOv3 for image recognition.
+This is a repo for the ESP32-CAM workshop taught at UVic in the fall of 2023 using the AI Thinker board and OpenCV using YOLOv3 for image recognition.
 
 To install the esp32-cam board first install the Arduino 2.2.1 environment:
 
@@ -22,9 +22,13 @@ open the serial monitor, set the baud to 115200, and press the reset button on t
 The URL of the camera should now appear in the serial monitor as follows (but with your own URL)
 
 CAMERA OK
+
 http://10.75.1.66
+
   /cam-lo.jpg
+
   /cam-hi.jpg
+
   /cam-mid.jpg
 
   If the camera does not read as OK, check your ssid and username and reset the ESP32-CAM board again.
@@ -42,6 +46,7 @@ Make sure that you have python 3.x installed. https://www.python.org/downloads/
 Install the editor of your choice. I will demonstrate in VS Code, but any editor is fine.
 
 pip install numpy
+
 pip install opencv-python
 
 place the files from this repository into a directory (using either git clone, if you have installed github desktop, or by clicking on the code dropdown and downloading a zip file. You may have done this already in the above section on setting up the ESP32-CAM)
