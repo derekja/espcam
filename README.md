@@ -1,6 +1,13 @@
 # espcam
 This is a repo for the ESP32-CAM workshop taught at UVic in the fall of 2023 using the AI Thinker board and OpenCV using YOLOv3 for image recognition.
 
+on macos:
+install xcode
+install homebrew
+(to be continued! I couldn't get the esp32 tools to install!)
+
+on windows:
+
 To install the esp32-cam board first install the Arduino 2.2.1 environment:
 
 https://www.arduino.cc/en/software
@@ -13,7 +20,11 @@ Then you can plug the board into a usb port and select the "AI Thinker ESP32-CAM
 
 Next, load the sketch ("cameraserver.ino") into the arduino environment (by either cloning this repository, or clicking on the code button and downloading a zip file and extracting it to a directory)
 
-If you are on the UVic network, you can leave lines 11 and 12 at their defaults, and fill in your netlink information for lines 7-9. And make sure that line 79 is commented out, and line 80 is uncommented.
+Next, go to https://github.com/yoursunny/esp32cam and click on the "code" button and download a zip file
+
+In the arduino UI, under sketch click on include library-> add zip library and point to the zip file you just downloaded.
+
+ignore this! the uvic network may not work at the moment! If you are on the UVic network, you can leave lines 11 and 12 at their defaults, and fill in your netlink information for lines 7-9. And make sure that line 79 is commented out, and line 80 is uncommented.
 
 If you are on a home network, put your ssid and password in lines 11-12 and then comment out line 80 and uncomment line 79.
 

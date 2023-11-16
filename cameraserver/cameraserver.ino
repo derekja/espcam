@@ -4,12 +4,12 @@
 #include "esp_wpa2.h"
  
 //Identity for user with password related to his realm (organization)
-#define EAP_IDENTITY "user@uvic.ca" //nickname@example.com, at some organizations should work nickname only without realm, but it is not recommended
-#define EAP_PASSWORD "password" //password for eduroam (netlink) account
-#define EAP_USERNAME "user" // the Username is the same as the Identity in most eduroam networks.
+#define EAP_IDENTITY "makestuff#uvic.ca" //nickname@example.com, at some organizations should work nickname only without realm, but it is not recommended
+#define EAP_PASSWORD "1@makerspace" //password for eduroam (netlink) account
+#define EAP_USERNAME "makestuff" // the Username is the same as the Identity in most eduroam networks.
 
-const char* WIFI_SSID = "catawumpus";
-const char* WIFI_PASS = "jabberwocky";
+const char* WIFI_SSID = "ModSquad";
+const char* WIFI_PASS = "feint405!tipples";
 const char* ssid = "eduroam"; // eduroam SSID
  
 WebServer server(80);
@@ -76,8 +76,8 @@ void  setup(){
   }
   WiFi.persistent(false);
   WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_SSID, WIFI_PASS);
- // WiFi.begin(ssid, WPA2_AUTH_PEAP, EAP_IDENTITY, EAP_USERNAME, EAP_PASSWORD); // without CERTIFICATE, RADIUS server EXCEPTION "for old devices" required
+  //WiFi.begin(WIFI_SSID, WIFI_PASS);
+  WiFi.begin(ssid, WPA2_AUTH_PEAP, EAP_IDENTITY, EAP_USERNAME, EAP_PASSWORD); // without CERTIFICATE, RADIUS server EXCEPTION "for old devices" required
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
   }
