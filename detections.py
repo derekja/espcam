@@ -8,7 +8,7 @@ net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
 classes = []
 
 # replace with camera URL
-url='http://10.75.1.66/cam-hi.jpg'
+url='http://192.168.200.101/cam-hi.jpg'
 
 # Load class names from coco file
 with open("coco.names", "r") as f:

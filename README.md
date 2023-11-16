@@ -40,9 +40,9 @@ Next, go to https://github.com/yoursunny/esp32cam and click on the "code" button
 
 In the arduino UI, under sketch click on include library-> add zip library and point to the zip file you just downloaded.
 
-ignore this! the uvic network may not work at the moment! If you are on the UVic network, you can leave lines 11 and 12 at their defaults, and fill in your netlink information for lines 7-9. And make sure that line 79 is commented out, and line 80 is uncommented.
+ignore this! the uvic network will not work at the moment! If you are on the UVic network, you can leave lines 11 and 12 at their defaults, and fill in your netlink information for lines 7-9. And make sure that line 82 is commented out, and line 84 is uncommented.
 
-If you are on a home network, put your ssid and password in lines 11-12 and then comment out line 80 and uncomment line 79.
+If you are on a home network, put your ssid and password in lines 11-12 and then comment out line 84 and uncomment line 82.
 
 open the serial monitor, set the baud to 115200, and press the reset button on the ESP32-CAM (or unplug and plug back in the board)
 
@@ -68,7 +68,7 @@ You should probably use virtual environments for your python setup. This prevent
 
 You may also want some introduction to git and source code control. I like github desktop and generally use the command line tools in the git bash shell that it installs. You can find information about that here: https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop
 
-Make sure that you have python 3.x installed. https://www.python.org/downloads/
+Make sure that you have python 3.x installed. https://www.python.org/downloads/ (I would advise against 3.12 right now, one of the examples does not work)
 
 Install the editor of your choice. I will demonstrate in VS Code, but any editor is fine.
 
@@ -93,4 +93,6 @@ This example can be extended to a later (and more performant) version of YOLO by
 Some more detail on the YOLO family of detectors can be found here: https://www.v7labs.com/blog/yolo-object-detection
 
 And some detail on training the models and writing new detectors here: https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/
+
+A nice example from a student in my lab is here: https://github.com/sofiiak13/OpenCV (this is the one that needs something lower than python 3.12, but higher than 3.9)
 
