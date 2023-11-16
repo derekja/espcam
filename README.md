@@ -21,7 +21,7 @@ softwareupdate --install-rosetta
 /usr/bin/pgrep -q oahd && echo Yes || echo No
 ```
 
-#### Arduino Installation Instructions
+### Arduino & Python Installation
 
 To install the esp32-cam board first install the Arduino 2.2.1 environment:
 
@@ -61,7 +61,7 @@ http://10.75.1.66
 
   You can now open a web browser (that is on the same subnet) to one of the three URLs listed and see the camera output. Each time the page is reloaded a new image will be present.
 
-Python setup
+#### Python Setup
 
 You should probably use virtual environments for your python setup. This prevent different versions from conflicting with each other. Please see additional information here: https://realpython.com/python-virtual-environments-a-primer/
 
