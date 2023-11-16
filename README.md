@@ -25,6 +25,7 @@ softwareupdate --install-rosetta
 
 To install the esp32-cam board first install the Arduino 2.2.1 environment:
 
+
 https://www.arduino.cc/en/software
 
 Then in the preferences dialogue add the board manager url: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
