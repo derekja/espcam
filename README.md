@@ -1,12 +1,27 @@
 # espcam
 This is a repo for the ESP32-CAM workshop taught at UVic in the fall of 2023 using the AI Thinker board and OpenCV using YOLOv3 for image recognition.
 
-on macos:
+## Installation
+
+#### Mac Setup
+
+To install Arduino on Mac's you should have XCode, HomeBrew, and if you are running an M1 Mac Rosetta installed. To install XCodeand HomeBrew, run the following commands:
+
+```bash
 install xcode
 install homebrew
-(to be continued! I couldn't get the esp32 tools to install!)
+```
 
-on windows:
+**Note:** To install Rosetta on M-Series Mac's you also need to install Rosetta. To check if you have Rosetta installed the following command can be executed and should output 'Yes':
+
+```bash
+softwareupdate --install-rosetta
+# Verify that Rosetta is installed by running the following command.
+# Output should be 'Yes'
+/usr/bin/pgrep -q oahd && echo Yes || echo No
+```
+
+### Arduino & Python Installation
 
 To install the esp32-cam board first install the Arduino 2.2.1 environment:
 
@@ -46,7 +61,7 @@ http://10.75.1.66
 
   You can now open a web browser (that is on the same subnet) to one of the three URLs listed and see the camera output. Each time the page is reloaded a new image will be present.
 
-Python setup
+#### Python Setup
 
 You should probably use virtual environments for your python setup. This prevent different versions from conflicting with each other. Please see additional information here: https://realpython.com/python-virtual-environments-a-primer/
 
