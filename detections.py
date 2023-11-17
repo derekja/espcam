@@ -43,6 +43,7 @@ while True:
             class_id = np.argmax(scores)
             confidence = scores[class_id]
             if confidence > 0.5:  # Filter detections by confidence threshold
+                
                 center_x = int(detection[0] * frame.shape[1])
                 center_y = int(detection[1] * frame.shape[0])
                 width = int(detection[2] * frame.shape[1])
@@ -55,6 +56,12 @@ while True:
                 cv2.rectangle(frame, (x, y), (x + width, y + height), (0, 255, 0), 2)
                 label = f"{classes[class_id]}: {confidence:.2f}"
                 cv2.putText(frame, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+                # save out a picture if class is a bottle
+                if classes[class_id]=="bottle":
+                    print("bottle")
+                    cv2.imwrite("testimg.jpg",frame)
+
 
     # Display the frame with detections
     cv2.imshow(" DISPLAYING : FRAME |  Detections", frame)
