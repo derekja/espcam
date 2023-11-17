@@ -3,9 +3,10 @@ This is a repo for the ESP32-CAM workshop taught at UVic in the fall of 2023 usi
 
 ## Installation
 
-#### Mac Setup
+#### M-series Mac Setup
 
-To install Arduino on Mac's you should have XCode, HomeBrew, and if you are running an M1 Mac Rosetta installed. To install XCodeand HomeBrew, run the following commands:
+To install Arduino on newer Mac's you should have XCode, HomeBrew, and Rosetta installed. To install XCode and HomeBrew, run the following commands:
+(these are not necessary on any mac other than an M-series)
 
 ```bash
 install xcode
@@ -94,5 +95,5 @@ Some more detail on the YOLO family of detectors can be found here: https://www.
 
 And some detail on training the models and writing new detectors here: https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/
 
-A nice example from a student in my lab is here: https://github.com/sofiiak13/OpenCV (this is the one that needs something lower than python 3.12, but higher than 3.9)
+A nice example from a student in my lab is here: [https://github.com/sofiiak13/OpenCV](https://github.com/sofiiak13/OpenCV) (this is the one that needs something lower than python 3.12, but higher than 3.9)
 
