@@ -1,5 +1,5 @@
 # espcam
-This is a repo for the ESP32-CAM workshop taught at UVic in the fall of 2023 using the AI Thinker board and OpenCV using YOLOv3 for image recognition.
+This is a repo for the ESP32-CAM workshop taught at UVic in the fall of 2024 using the AI Thinker board and OpenCV using YOLOv3 for image recognition.
 
 Here is a video walkthrough of the installation: https://share.descript.com/view/QBxWRlFY9pw
 
