@@ -1,7 +1,7 @@
 #include <WebServer.h>
 #include <WiFi.h>
 #include <esp32cam.h>
-#include "esp_wpa2.h"
+#include "esp_eap_client.h"
  
 //Identity for user with password related to his realm (organization)
 #define EAP_IDENTITY "user@uvic.ca" //nickname@example.com, at some organizations should work nickname only without realm, but it is not recommended
@@ -10,8 +10,8 @@
 const char* ssid = "eduroam"; // eduroam SSID
 
 //for local wifi
-const char* WIFI_SSID = "makestuff";
-const char* WIFI_PASS = "placeholder";
+const char* WIFI_SSID = "catawumpus";
+const char* WIFI_PASS = "jabberwocky";
 
  
 WebServer server(80);

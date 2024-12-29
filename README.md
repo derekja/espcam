@@ -1,7 +1,7 @@
 # espcam
 This is a repo for the ESP32-CAM workshop taught at UVic in the fall of 2024 using the AI Thinker board and OpenCV using YOLOv3 for image recognition.
 
-Here is a video walkthrough of the installation: https://share.descript.com/view/QBxWRlFY9pw
+Here is a video walkthrough of the 2023 installation: https://share.descript.com/view/QBxWRlFY9pw
 
 ## Installation
 
@@ -26,14 +26,14 @@ softwareupdate --install-rosetta
 
 ### Arduino & Python Installation
 
-To install the esp32-cam board first install the Arduino 2.2.1 environment:
+To install the esp32-cam board first install the Arduino 2.3.4 environment (was version 2.2.1 in 2023):
 
 
 https://www.arduino.cc/en/software
 
 Then in the preferences dialogue add the board manager url: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
-Then in the Tools -> Board manager install the ESP32 by Espressif Systems
+Then in the Tools -> Board manager install the ESP32 by Espressif Systems (version 3.1.0, was previously 2.0.14 in 2023)
 
 Then you can plug the board into a usb port and select the "AI Thinker ESP32-CAM" board on the appropriate port.
 
@@ -43,7 +43,7 @@ Next, go to https://github.com/yoursunny/esp32cam and click on the "code" button
 
 In the arduino UI, under sketch click on include library-> add zip library and point to the zip file you just downloaded.
 
-ignore this! the uvic network will not work at the moment! If you are on the UVic network, you can leave lines 11 and 12 at their defaults, and fill in your netlink information for lines 7-9. And make sure that line 82 is commented out, and line 84 is uncommented.
+If you have previously installed another version of this library you will get an error when you add the zip library. To fix this, you can go to arduino->preferences (arduino->setting on mac) and find the sketch location. Then you can navigate to the location and delete the esp32cam entry under "libraries" and then install again from the zip file.
 
 If you are on a home network, put your ssid and password in lines 11-12 and then comment out line 84 and uncomment line 82.
 
